@@ -1,0 +1,74 @@
+---
+title: "Crop_Yield_analysis"
+author: "Ahemd Elharith Osama"
+date: "`r Sys.Date()`"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+> # Introduction 
+
+Smallholder farmers are crucial contributors to global food production, and in India often suffer most from poverty and malnutrition. These farmers face challenges such as limited access to modern agriculture, unpredictable weather, and resource constraints. To tackle this issue, Digital Green collected data via surveys, offering insights into farming practices, environmental conditions, and crop yields.
+
+> # About the Data 
+
+The data was collected through a survey conducted across multiple districts in India. It consists of a variety of factors that could potentially impact the yield of rice crops. These factors include things like the type and amount of fertilizers used, the quantity of seedlings planted, methods of preparing the land, different irrigation techniques employed, among other features. The dataset comprises more than 5000 data points, each having more than 40 features.
+
+-   Data source : [Zindi platform](https://zindi.africa/competitions/digital-green-crop-yield-estimate-challenge/data) .
+-   powered by : [Digital Green](https://www.digitalgreen.org/) and [Fair Forward AI](https://www.bmz-digital.global/en/overview-of-initiatives/fair-forward/) .
+
+> # The objective 
+
+The most important variable in this data is the Yield variable which is the corp yield for different farmers in India (wheat and rice crops) , we want to answer the following questions :
+
+1.  What the distribution of the yield variables ?
+
+2.  what is the crop yield for each District in India ?
+
+3.  What is the crop yield per acre for different Districts in India ?
+
+4.  What is the different agriculture methods that influence the crop yield ?
+
+5.   What the best agriculture methods that implies better crop yield ?
+
+6.  What are the variables that are correlated to the yield variable ?
+
+> ***NOTE :***
+>
+> ***We gonna use statistical inference with proper tests to draw conclusion about these questions and estimate the population parameters.***
+
+# Workflow Describtion:
+
+**We'll go through the following steps in order to achieve the objective** :
+
+1.  Discovering the data.
+
+2.  Explanatory Data Analysis "EDA".
+
+3.  Cleaning the data.
+
+4.  Data analysis and visualization.
+
+5.  Statistical testing
+
+6.  Insights and conclusion.
+
+> ## 1. Discovering the data:
+
+-   ***Importing the data***
+
+    ```{r}
+    train_df <- read.csv("Train.csv")
+    varible_defintion <- read.csv("VariableDescription.csv")
+    ```
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
