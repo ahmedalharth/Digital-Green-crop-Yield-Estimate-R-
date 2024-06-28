@@ -1,5 +1,5 @@
 # R project
-This project is a part of my grads in University of Khartoum Faculty of Mathematical Sciences and Informatics - Department of Statistics. 
+This project is a part of my grades in University of Khartoum Faculty of Mathematical Sciences and Informatics - Department of Statistics. 
 Fouurth year semster 7.
 
 ### The Project should consist of:
